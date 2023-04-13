@@ -27,7 +27,7 @@ public class MyAccountPage {
     @FindBy(name = "register")
     private WebElement registerBtn;
 
-    @FindBy(id = "username" )
+    @FindBy(id = "username")
     private WebElement usernameInput;
 
     @FindBy(id = "password")
@@ -36,20 +36,23 @@ public class MyAccountPage {
     @FindBy(name = "login")
     private WebElement loginBtn;
 
-    public LoggedUserPage logInValidData(String username ,String password) {
+    public LoggedUserPage logInValidData(String username, String password) {
         logIn(username, password);
         return new LoggedUserPage(driver);
     }
-        public MyAccountPage logInInvalidData(String username ,String password){
-            logIn(username, password);
-            return this;
 
-}
-private void logIn(String username,String password){
-    usernameInput.sendKeys(username);
-    passwordInput.sendKeys(password);
-    loginBtn.click();
-}
+    public MyAccountPage logInInvalidData(String username, String password) {
+        logIn(username, password);
+        return this;
+
+    }
+
+    private void logIn(String username, String password) {
+        usernameInput.sendKeys(username);
+        passwordInput.sendKeys(password);
+        loginBtn.click();
+    }
+
     public LoggedUserPage registerUserValidData(String email, String password) {
         registerUser(email, password);
         return new LoggedUserPage(driver);

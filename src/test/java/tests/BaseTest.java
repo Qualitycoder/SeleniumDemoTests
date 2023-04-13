@@ -1,5 +1,6 @@
 package tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,14 +13,15 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://seleniumdemo.com/");
+
     }
 
     @AfterMethod
     public void tearDown() {
-       driver.quit();
+        //driver.quit();
 
     }
 }
