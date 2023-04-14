@@ -18,6 +18,9 @@ public class MyAccountPage {
     @FindBy(xpath = "//ul[@class='woocommerce-error']//li")
     private WebElement error;
 
+    @FindBy(xpath = "//div[@class='woocommerce-notices-wrapper']//li")
+    private WebElement logInError;
+
     @FindBy(id = "reg_email")
     private WebElement regEmailInput;
 

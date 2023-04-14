@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c238511c-f9bd-47a6-a447-d378f54da617" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AddressPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/OrderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/CheckOutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LogInTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoggedUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoggedUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AddressPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AddressPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CheckOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CheckOutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +28,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -79,7 +74,7 @@
       <recent name="tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CheckOutTest.buyProduct">
+  <component name="RunManager" selected="TestNG.tests">
     <configuration name="CheckOutTest.buyProduct" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDemoTests" />
       <extension name="coverage">
@@ -98,7 +93,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LogInTest.logInTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumDemoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LogInTest" />
+      <option name="METHOD_NAME" value="logInTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogInTest.logInWithInvalidDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumDemoTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LogInTest" />
+      <option name="METHOD_NAME" value="logInWithInvalidDataTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.registerUserInvalidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDemoTests" />
       <extension name="coverage">
         <pattern>
@@ -108,14 +139,15 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.RegisterTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="registerUserInvalidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterTest.registerLink" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumDemoTests" />
       <extension name="coverage">
         <pattern>
@@ -124,45 +156,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegisterTest" />
-      <option name="METHOD_NAME" value="registerLink" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterTest.registerUserEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumDemoTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegisterTest" />
-      <option name="METHOD_NAME" value="registerUserEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testowo.niezleniezle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumDemoTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.Testowo" />
-      <option name="METHOD_NAME" value="niezleniezle" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -171,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.tests" />
+        <item itemvalue="TestNG.RegisterTest.registerUserInvalidEmail" />
+        <item itemvalue="TestNG.LogInTest.logInWithInvalidDataTest" />
+        <item itemvalue="TestNG.LogInTest.logInTest" />
         <item itemvalue="TestNG.CheckOutTest.buyProduct" />
-        <item itemvalue="TestNG.Testowo.niezleniezle" />
-        <item itemvalue="TestNG.RegisterTest" />
-        <item itemvalue="TestNG.RegisterTest.registerUserEmail" />
-        <item itemvalue="TestNG.RegisterTest.registerLink" />
       </list>
     </recent_temporary>
   </component>

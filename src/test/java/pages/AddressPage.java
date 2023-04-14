@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,8 +50,7 @@ public class AddressPage {
         cityInput.sendKeys(city);
         phoneInput.sendKeys(phone);
         emailInput.sendKeys(email);
-        placeOrderBtn.click();
-        placeOrderBtn.click();
+        placeOrderBtn.sendKeys(Keys.ENTER);
         return new OrderPage(driver);
     }
 
